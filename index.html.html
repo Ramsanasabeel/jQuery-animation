@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+     <!-- <script src='jquery-3.7.1.min.js'></script> -->
+     <script>
+        $(document).ready (function(){
+            $ (".pic2").click(function(){
+               $(".pic1").attr("src","kozhikod.jpg"); 
+            });
+            $(".pic3").click(function(){
+               $(".pic1").attr("src","palakkad.webp"); 
+            }); 
+            $(".pic4").click(function(){
+               $(".pic1").attr("src","thiruvananthapuram.jpeg"); 
+            }); 
+        });
+         </script>
+
+</head>
+<body>
+    <style>
+       .div1{
+    margin-left: 35%;
+    margin-top: 20px;
+}
+.div2{
+    margin-left: 40%; 
+    margin-top: 20px;
+    float: left;
+} 
+    </style>
+    <div class="div1">
+    <img src="kochi.jpg" alt="" height="500" width="500" class="pic1">
+    </div>
+    <div class="div2">
+    <img src="kozhikod.jpg" alt="" height="100" width="100" class="pic2">
+    <img src="palakkad.webp" alt="" height="100" width="100" class="pic3">
+    <img src="thiruvananthapuram.jpeg" alt="" height="100" width="100" class="pic4">
+    </div>
+</body>
+</html>
